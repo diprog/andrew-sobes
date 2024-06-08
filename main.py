@@ -2,6 +2,7 @@ import asyncio
 
 import core.main
 from webserver import webserver
+from webserver.classes.city_weather import CityWeather
 
 
 async def idle():

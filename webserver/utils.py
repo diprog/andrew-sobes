@@ -5,4 +5,5 @@ from aiohttp import web
 
 
 def json_response(data: Any, status: int = 200):
-    web.Response(text=json.dumps(data), content_type='application/json', status=status)
+    headers = {'asdasdsd': 'asdadas'}
+    return web.Response(text=json.dumps(data), content_type='application/json', status=status, headers=headers)
